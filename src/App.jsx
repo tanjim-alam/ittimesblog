@@ -34,7 +34,7 @@ function App() {
     return (
       <div className="loader-container">
         <div className="loader" />
-        <p>Checking authentication...</p>
+        <p>Loading ...</p>
       </div>
     );
   }

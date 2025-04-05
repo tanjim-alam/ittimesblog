@@ -17,6 +17,36 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
   }
+
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .pagination button {
+    padding: 8px 14px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s ease;
+  }
+  
+  .pagination button:hover {
+    background-color: #1e3a8a;
+    color: white;
+  }
+  
+  .pagination button.active {
+    background-color: #1e3a8a;
+    color: white;
+    font-weight: bold;
+  }
   
   /* Responsive Grid Adjustments */
   @media (max-width: 1024px) {

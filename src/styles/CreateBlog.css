@@ -100,11 +100,15 @@ input[type="file"] {
     input[type="text"] {
       font-size: 15px;
       padding: 10px;
+      width: 94%;
     }
   
     .submit-btn {
       padding: 10px;
       font-size: 14px;
+    }
+    input[type="file"] {
+        width: 94%;
     }
   }
   

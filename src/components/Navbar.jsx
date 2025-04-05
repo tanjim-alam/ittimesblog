@@ -21,7 +21,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-content">
         <div className="navbar-logo">
-          <Link to="/">INTimes</Link>
+          <Link to="/">ITTimes</Link>
         </div>
         <div className="navbar-links">
           {user ? (
