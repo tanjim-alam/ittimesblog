@@ -1,0 +1,110 @@
+.form-container1 {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fefefe;
+    border: 1px solid #ddd;
+    /* border-radius: 12px; */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .form-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  input[type="text"] {
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.2s ease;
+    width: 96%;
+  }
+
+input[type="file"] {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 96%;
+}
+  
+  input[type="text"]:focus {
+    border-color: #1e3a8a;
+    outline: none;
+  }
+  
+  label {
+    font-weight: 500;
+    color: #444;
+  }
+  
+  .submit-btn {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .submit-btn:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+  }
+  
+  .submit-btn:hover:not(:disabled) {
+    background-color: #1e3a8a;
+  }
+  
+  /* --- Responsive Design --- */
+  
+  @media (max-width: 768px) {
+    .form-container {
+      margin: 20px;
+      padding: 20px;
+    }
+  
+    .form-title {
+      font-size: 24px;
+    }
+  
+    .submit-btn {
+      font-size: 15px;
+      padding: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .form-container {
+      margin: 15px;
+      padding: 15px;
+    }
+  
+    .form-title {
+      font-size: 20px;
+    }
+  
+    input[type="text"] {
+      font-size: 15px;
+      padding: 10px;
+    }
+  
+    .submit-btn {
+      padding: 10px;
+      font-size: 14px;
+    }
+  }
+  
