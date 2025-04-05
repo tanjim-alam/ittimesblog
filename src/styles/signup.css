@@ -46,7 +46,7 @@
   /* ✅ Responsive Enhancements */
   @media (max-width: 480px) {
     .signup-container {
-      width: 90%;
+      width: 80%;
       padding: 1.5rem;
     }
   

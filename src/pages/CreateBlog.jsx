@@ -21,7 +21,7 @@ const CreateBlog = () => {
   const config1 = useMemo(() => ({
     readonly: false,
     placeholder: "Start typing...",
-    height: 600,
+    height: 400,
   }), []);
 
   const handleImageUpload = async (file) => {
