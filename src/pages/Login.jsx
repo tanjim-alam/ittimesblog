@@ -12,11 +12,17 @@ const Login = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const handleSubmit = async e => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const userCredential = await signInWithEmailAndPassword(auth, email, password);
-    dispatch(setUser({ uid: userCredential.user.uid, email }));
-    navigate('/');
+  
+    try {
+      const userCredential = await signInWithEmailAndPassword(auth, email, password);
+      dispatch(setUser({ uid: userCredential.user.uid, email: userCredential.user.email }));
+      navigate('/');
+    } catch (error) {
+      console.error("Login failed:", error.message);
+      alert("Login failed: " + error.message); // or setError(error.message) if using state
+    }
   };
 
   return (

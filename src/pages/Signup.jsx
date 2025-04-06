@@ -12,11 +12,16 @@ const Signup = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const handleSubmit = async e => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-    dispatch(setUser({ uid: userCredential.user.uid, email }));
-    navigate('/');
+  
+    try {
+      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+      dispatch(setUser({ uid: userCredential.user.uid, email }));
+      navigate('/');
+    } catch (error) {
+      alert("Signup failed: " + error.message);
+    }
   };
 
   return (

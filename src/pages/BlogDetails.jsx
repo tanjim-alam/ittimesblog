@@ -33,7 +33,7 @@ const BlogDetails = () => {
     <div className="loader-container">
           <div className="loader" />
           <p>Loading blogs...</p>
-        </div>
+    </div>
   );
 };
 
